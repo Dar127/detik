@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.navbar-left a, .navbar-right a {
+    color: #000000;
+    text-align: right;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.video-content {
+    position: relative;
+    width: 100%;
+}
+
+.video-content video {
+    width: 100%;
+    height: 730px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+}
+
+.overlay .overlay-description {
+    font-size: 20px;
+    margin: 0;
+}
+
+.button1 {
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 140, 255);
+    margin-top: 35px;
+    padding: 12px 12px 12px 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.introduction {
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 25px;
+    margin-top: 100px;
+}
+
+.introduction h1{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 159)
+}
+
+.introduction h2 {
+    font-weight: bolder;
+    color: rgb(0, 0, 159)
+}
+
+.introduction-logo {
+    float: right;
+    margin-top: 30px;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.slideshow h1 {
+    color: rgb(0, 0, 135);
+    font-weight: bolder;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 15px 0;
+    background: #ffffff;
+    margin-top: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #a09f9f;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-dot {
+    background-color: #006aff;
+}
+
+.jobs h1 {
+    color: #2300a0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.jobs {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.dropdown {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.search-button {
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 140, 255);
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.jobs-list {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+.job-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+  
+.job-title {
+    flex: 1;
+    padding: 10px;
+}
+  
+.job-department, .job-type {
+    flex: 1;
+    text-align: center;
+}
+  
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 240px;
+    margin-right: 200px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    font-size: large;
+}
+
+.footer-logo {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin-left: 15%;
+    font-size: small;
+}
+
+.copyright hr {
+    margin: auto;
+    width: 70%;
+}
+
+.copyright strong {
+    cursor: pointer;
+}
